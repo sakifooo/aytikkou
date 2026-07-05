@@ -48,7 +48,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     init {
         viewModelScope.launch {
             _state.update { it.copy(isLoading = true) }
-            repository.initializeIfNeeded()
+            // repository.initializeIfNeeded()
             
             // Collect all channels
             launch {
