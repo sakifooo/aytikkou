@@ -1,4 +1,3 @@
-import com.google.gms.googleservices.GoogleServicesPlugin.MissingGoogleServicesStrategy
 
 plugins {
   alias(libs.plugins.android.application)
@@ -63,9 +62,6 @@ android {
 // Configure the Secrets Gradle Plugin to use .env and .env.example files
 // to match the convention used in Web projects.
 
-googleServices {
-  missingGoogleServicesStrategy = MissingGoogleServicesStrategy.WARN
-}
 
 
 // Some unused dependencies are commented out below instead of being removed.
